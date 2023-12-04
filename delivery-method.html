@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <title>delivery-method</title>
+  </head>
+  <body>
+    <section class="bg-[#FAFAFA] w-full h-full">
+      <div class="flex flex-col w-full custom-container main">
+        <!-- header  -->
+        <div class="header sm:ml-[68px] sm:mr-[70px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-[37px] h-[33px] cursor-pointer sm:hidden ml-[14px]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+
+          <div class="logo stoovo sm:w-auto">
+            <a href=""
+              ><img
+                src="img/logo.png"
+                alt="logo"
+                class="ml-auto sm:ml-0 sm:mr-[6.55px]"
+            /></a>
+            <h2
+              class="text-[20px] font-medium sm:text-[29px] sm:font-bold mx-auto sm:ml-0 order-first sm:order-last"
+            >
+              <a href=""> Stoovo</a>
+            </h2>
+          </div>
+          <div class="flex justify-between">
+            <button class="btn-primary mr-[18px] hidden sm:flex text-black">
+              Support
+            </button>
+            <img
+              src="img/Frame 2803933.png"
+              alt="frame"
+              class="cursor-pointer w-[40px] h-[40px]"
+            />
+          </div>
+        </div>
+
+        <!-- content  -->
+        <div
+          class="max-w-[640px] mx-auto sm:mt-[68px] mt-[52px] mb-[28px] sm:mb-[23px]"
+        >
+          <!--pregress bar -->
+          <ul class="progress">
+            <li class="bar">
+              <div class="bar__fill sm:w-[20%] w-full"></div>
+            </li>
+            <li class="point point--complete">
+              <button>1 <span>. Pickup</span></button>
+            </li>
+            <li class="point point--active">
+              <button>2 <span>. Delivery</span></button>
+            </li>
+            <li class="point">
+              <button>3 <span>. Package type</span></button>
+            </li>
+            <li class="point">
+              <button>4 <span>. Pickup date</span></button>
+            </li>
+            <li class="point">
+              <button>5 <span>. Checkout</span></button>
+            </li>
+            <li class="point last-point">
+              <button>3 more</button>
+            </li>
+          </ul>
+
+          <div class="sm:mt-[44px] mb-[36px] mt-[48px]">
+            <h2 class="sub_heading">Delivery method</h2>
+            <p class="paragraph">Tell us where to pick up the package</p>
+          </div>
+          <div class="registration sm:gap-[20px] gap-[24px] flex flex-col">
+            <div
+              class="mb-[20px] gap-[12px] grid sm:grid-cols-2 grid-cols-1 justify-items-center"
+            >
+              <!-- first  -->
+              <div class="box-2 box-dark active sm:p-[24px] p-[20px]">
+                <div
+                  class="sm:mb-[42px] sm:w-[52px] sm:h-[52px] w-[40px] h-[40px] mb-[24px]"
+                >
+                  <img src="img/Handshake.png" alt="hand" />
+                </div>
+                <h4 class="mb-[4px] sm:text-[20px] text-[16px]">
+                  Direct handoff
+                </h4>
+                <p class="sm:text-[16px] text-[14px] leading-[21px]">
+                  Meet your Stoover at the door to ensure a secure handoff
+                </p>
+              </div>
+
+              <!-- second  -->
+              <div class="box-2 box-light sm:p-[24px] p-[20px]">
+                <div
+                  class="sm:mb-[42px] sm:w-[52px] sm:h-[52px] w-[40px] h-[40px] mb-[24px]"
+                >
+                  <img src="img/Entrance.png" alt="Entrance" />
+                </div>
+                <h4 class="mb-[4px] sm:text-[20px] text-[16px]">
+                  Leave on doorstep
+                </h4>
+                <p class="sm:text-[16px] text-[14px] leading-[21px]">
+                  Place items outside your door in advance of your pickup time
+                </p>
+              </div>
+            </div>
+            <form>
+              <div class="flex flex-col sm:flex-row">
+                <div class="w-full">
+                  <label class="form-label"
+                    >Additional iformation for Stoover (Optional)</label
+                  >
+                  <input type="text" class="additional-input-control" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- button  -->
+          <div
+            class="flex flex-col sm:flex-row mt-[48px] sm:mt-[28px] sm:gap-[12px] buttons"
+          >
+            <button
+              class="btn-back sm:w-1/2 sm:flex items-center justify-center hidden gap-[18.33px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-[18px] h-[18px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
+              </svg>
+              Back
+            </button>
+            <button class="btn-next sm:w-1/2 w-full active">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

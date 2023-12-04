@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <title>packge-date</title>
+  </head>
+  <body>
+    <section class="bg-[#FAFAFA] w-full h-full">
+      <div class="flex flex-col w-full custom-container main">
+        <!-- header  -->
+        <div class="header sm:ml-[68px] sm:mr-[70px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-[37px] h-[33px] cursor-pointer sm:hidden ml-[14px]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+
+          <div class="logo stoovo sm:w-auto">
+            <a href=""
+              ><img
+                src="img/logo.png"
+                alt="logo"
+                class="ml-auto sm:ml-0 sm:mr-[6.55px]"
+            /></a>
+            <h2
+              class="text-[20px] font-medium sm:text-[29px] sm:font-bold mx-auto sm:ml-0 order-first sm:order-last"
+            >
+              <a href=""> Stoovo</a>
+            </h2>
+          </div>
+          <div class="flex justify-between">
+            <button class="btn-primary mr-[18px] hidden sm:flex text-black">
+              Support
+            </button>
+            <img
+              src="img/Frame 2803933.png"
+              alt="frame"
+              class="cursor-pointer w-[40px] h-[40px]"
+            />
+          </div>
+        </div>
+
+        <!-- content  -->
+        <div
+          class="max-w-[640px] mx-auto sm:mt-[68px] mt-[52px] mb-[28px] sm:mb-[23px]"
+        >
+          <!--pregress bar -->
+          <ul class="progress">
+            <li class="bar">
+              <div class="bar__fill sm:w-[60%] w-full"></div>
+            </li>
+            <li class="point point--complete">
+              <button>1 <span>. Pickup</span></button>
+            </li>
+            <li class="point point--complete">
+              <button>2 <span>. Delivery</span></button>
+            </li>
+            <li class="point point--complete">
+              <button>3 <span>. Package type</span></button>
+            </li>
+            <li class="point point--active">
+              <button>4 <span>. Pickup date</span></button>
+            </li>
+            <li class="point">
+              <button>5 <span>. Checkout</span></button>
+            </li>
+            <li class="point last-point">
+              <button>1 more</button>
+            </li>
+          </ul>
+
+          <div class="sm:mt-[44px] sm:mb-[24px] mb-[28px] mt-[40px]">
+            <h2 class="sub_heading">Pickup date and time</h2>
+            <p class="paragraph">
+              <span class="hidden sm:block">
+                Tell us where to deliver your packages </span
+              ><span class="sm:hidden">Pick delivery</span>
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-[24px]">
+            <div class="flex-col flex registration">
+              <div><h3>Delivery terms</h3></div>
+              <div class="flex gap-[8px] w-full">
+                <div
+                  class="box-2 box-dark active p-[20px] w-full sm:max-w-[194px] max-w-[139.5px]"
+                >
+                  <h4 class="text-[16px] leading-[22px] font-bold">$3</h4>
+                  <p>Scheduled pickup with fixed time set by Stoovo</p>
+                </div>
+                <div class="box-2 box-light p-[20px] w-full sm:max-w-[194px] max-w-[139.5px]">
+                  <h4 class="text-[16px] leading-[22px] font-bold">$7</h4>
+                  <p>ASAP pickup time</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-col flex registration">
+              <div><h3>Pickup date and time</h3></div>
+              <div class="flex items-center justify-between gap-[4px] ">
+                <div class="box-2 box-dark active px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Mon</p>
+                  <p class="text-[16px] leading-[22px] font-bold order-[-1]">
+                    Jan 12
+                  </p>
+                </div>
+                <div class="box-2 box-light px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Tue</p>
+                  <p class="text-[16px] leading-[22px] order-[-1]">Jan 13</p>
+                </div>
+                <div class="box-2 box-light px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Wen</p>
+                  <p class="text-[16px] leading-[22px] order-[-1]">Jan 14</p>
+                </div>
+                <div class="box-2 box-light px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Thu</p>
+                  <p class="text-[16px] leading-[22px] order-[-1]">Jan 15</p>
+                </div>
+                <div class="box-2 box-light px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Fri</p>
+                  <p class="text-[16px] leading-[22px] order-[-1]">Jan 16</p>
+                </div>
+                <div class="box-2 box-light px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Fri</p>
+                  <p class="text-[16px] leading-[22px] order-[-1]">Jan 16</p>
+                </div>
+                <div class="box-2 box-light px-[16px] py-[14px] date gap-[4px]">
+                  <p class="day">Fri</p>
+                  <p class="text-[16px] leading-[22px] order-[-1]">Jan 16</p>
+                </div>
+              </div>
+              <div>
+                <select class="time max-w-[241px] mt-[16px]">
+                  <option >12:00 AM - 2:00 PM</option>
+                  <option>11:00 AM - 1:00 PM</option>
+                  <option>11:00 AM - 1:00 PM</option>
+                  <option >11:00 AM - 1:00 PM</option>
+                  <option>11:00 AM - 1:00 PM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- button  -->
+          <div
+            class="flex flex-col sm:flex-row mt-[48px] sm:mt-[28px] sm:gap-[12px] buttons package-btn"
+          >
+            <button
+              class="btn-back sm:w-1/2 sm:flex items-center justify-center hidden gap-[18.33px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-[18px] h-[18px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
+              </svg>
+              Back
+            </button>
+            <button class="btn-next sm:w-1/2 w-full active">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
